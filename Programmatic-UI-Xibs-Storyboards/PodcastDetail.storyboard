@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Podcast Detail Controller-->
+        <scene sceneID="QPD-gw-DWs">
+            <objects>
+                <viewController storyboardIdentifier="PodcastDetailController" id="uNY-eN-T3c" customClass="PodcastDetailController" customModule="Programmatic_UI_Xibs_Storyboards" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3rH-f6-6Zr">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="music.mic" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="BfR-n1-nMH">
+                                <rect key="frame" x="0.0" y="44" width="414" height="399.5"/>
+                                <color key="tintColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="400" id="kAe-Mj-jrZ"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ArtistName" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D61-SI-4yP">
+                                <rect key="frame" x="20" y="464" width="374" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="BfR-n1-nMH" firstAttribute="leading" secondItem="kKK-VS-iE0" secondAttribute="leading" id="2jm-OT-fV6"/>
+                            <constraint firstItem="BfR-n1-nMH" firstAttribute="top" secondItem="kKK-VS-iE0" secondAttribute="top" constant="0.01" id="4Oc-sP-dlV"/>
+                            <constraint firstItem="kKK-VS-iE0" firstAttribute="trailing" secondItem="BfR-n1-nMH" secondAttribute="trailing" id="KQK-Yr-rfp"/>
+                            <constraint firstItem="D61-SI-4yP" firstAttribute="top" secondItem="BfR-n1-nMH" secondAttribute="bottom" constant="20" id="flM-gZ-AM3"/>
+                            <constraint firstItem="D61-SI-4yP" firstAttribute="leading" secondItem="kKK-VS-iE0" secondAttribute="leading" constant="20" id="j8b-Xo-QZE"/>
+                            <constraint firstItem="kKK-VS-iE0" firstAttribute="trailing" secondItem="D61-SI-4yP" secondAttribute="trailing" constant="20" id="ljb-dc-LDl"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="kKK-VS-iE0"/>
+                    </view>
+                    <connections>
+                        <outlet property="artistNameLabel" destination="D61-SI-4yP" id="VUZ-zw-9iY"/>
+                        <outlet property="podcastDetailImageView" destination="BfR-n1-nMH" id="NnI-D9-clX"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7FW-bW-4rd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="114.49275362318842" y="27.455357142857142"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="music.mic" catalog="system" width="64" height="58"/>
+    </resources>
+</document>
