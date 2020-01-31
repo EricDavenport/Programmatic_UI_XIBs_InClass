@@ -80,7 +80,7 @@ extension PodcastViewController : UICollectionViewDelegateFlowLayout {
     let podcast = podcasts[indexPath.row]
     print(podcast.collectionName)
     
-    // segue to the PodcastDetailCOntroller
+    // segue to the PodcastDetailController
     // access the PodcastDetailController from storyboard
     
     // make sure that the stodyboard id is set for the PodcastDetailController
