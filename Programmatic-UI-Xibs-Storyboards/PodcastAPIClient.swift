@@ -11,10 +11,14 @@ import NetworkHelper
 
 struct PodcastAPIClient {
   static func fetchPodcast(with name: String, completion: @escaping (Result<[Podcast], AppError>) -> ()) {
+
     let endpointURLString = "https://itunes.apple.com/search?media=podcast&limit=200&term=\(name)"
+
     guard let url = URL(string: endpointURLString) else {
       completion(.failure(.badURL(endpointURLString)))
+
       return
+
     }
     let request = URLRequest(url: url)
     NetworkHelper.shared.performDataTask(with: request) { (result) in
