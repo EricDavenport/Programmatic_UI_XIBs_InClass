@@ -10,12 +10,12 @@
 		5737C66623E1EBC300D9662D /* PodcastView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5737C66523E1EBC300D9662D /* PodcastView.swift */; };
 		5737C66823E1ECA200D9662D /* PodcastAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5737C66723E1ECA200D9662D /* PodcastAPIClient.swift */; };
 		5737C66A23E1ECEE00D9662D /* Podcast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5737C66923E1ECEE00D9662D /* Podcast.swift */; };
-		5737C66D23E1EE2F00D9662D /* ImageKit in Frameworks */ = {isa = PBXBuildFile; productRef = 5737C66C23E1EE2F00D9662D /* ImageKit */; };
 		576B556723E1E16700AA2253 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 576B556623E1E16700AA2253 /* AppDelegate.swift */; };
 		576B556923E1E16700AA2253 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 576B556823E1E16700AA2253 /* SceneDelegate.swift */; };
 		576B556B23E1E16700AA2253 /* PodcastViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 576B556A23E1E16700AA2253 /* PodcastViewController.swift */; };
 		576B557023E1E16800AA2253 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 576B556F23E1E16800AA2253 /* Assets.xcassets */; };
 		576B557323E1E16800AA2253 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 576B557123E1E16800AA2253 /* LaunchScreen.storyboard */; };
+		587FFD8823E8B14300F24821 /* ImageKit in Frameworks */ = {isa = PBXBuildFile; productRef = 587FFD8723E8B14300F24821 /* ImageKit */; };
 		589FB7EE23E21C9300420047 /* PodcastCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 589FB7ED23E21C9300420047 /* PodcastCell.xib */; };
 		589FB7F023E21CC800420047 /* PodcastCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 589FB7EF23E21CC800420047 /* PodcastCell.swift */; };
 		589FB7F223E222DC00420047 /* PodcastDetail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 589FB7F123E222DC00420047 /* PodcastDetail.storyboard */; };
@@ -44,7 +44,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5737C66D23E1EE2F00D9662D /* ImageKit in Frameworks */,
+				587FFD8823E8B14300F24821 /* ImageKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -104,7 +104,7 @@
 			);
 			name = "Programmatic-UI-Xibs-Storyboards";
 			packageProductDependencies = (
-				5737C66C23E1EE2F00D9662D /* ImageKit */,
+				587FFD8723E8B14300F24821 /* ImageKit */,
 			);
 			productName = "Programmatic-UI-Xibs-Storyboards";
 			productReference = 576B556323E1E16700AA2253 /* Programmatic-UI-Xibs-Storyboards.app */;
@@ -135,7 +135,7 @@
 			);
 			mainGroup = 576B555A23E1E16700AA2253;
 			packageReferences = (
-				5737C66B23E1EE2F00D9662D /* XCRemoteSwiftPackageReference "ImageKit" */,
+				587FFD8623E8B14300F24821 /* XCRemoteSwiftPackageReference "ImageKit" */,
 			);
 			productRefGroup = 576B556423E1E16700AA2253 /* Products */;
 			projectDirPath = "";
@@ -364,7 +364,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		5737C66B23E1EE2F00D9662D /* XCRemoteSwiftPackageReference "ImageKit" */ = {
+		587FFD8623E8B14300F24821 /* XCRemoteSwiftPackageReference "ImageKit" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/alexpaul/ImageKit";
 			requirement = {
@@ -375,9 +375,9 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		5737C66C23E1EE2F00D9662D /* ImageKit */ = {
+		587FFD8723E8B14300F24821 /* ImageKit */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 5737C66B23E1EE2F00D9662D /* XCRemoteSwiftPackageReference "ImageKit" */;
+			package = 587FFD8623E8B14300F24821 /* XCRemoteSwiftPackageReference "ImageKit" */;
 			productName = ImageKit;
 		};
 /* End XCSwiftPackageProductDependency section */
